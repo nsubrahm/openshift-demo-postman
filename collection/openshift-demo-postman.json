@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "6eac863f-6cc6-4a70-ba37-53e20d0a0f57",
+		"name": "OpenShift Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"OpenShiftDemo\",\n\t\"address\" : \"Hebbala, Bengaluru, INDIA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://custdemo-apis-custdemo.192.168.99.100.nip.io/customers",
+					"protocol": "http",
+					"host": [
+						"custdemo-apis-custdemo",
+						"192",
+						"168",
+						"99",
+						"100",
+						"nip",
+						"io"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"OpenShiftDemo\",\n\t\"address\" : \"Hebbala, Bengaluru, INDIA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://custdemo-apis-custdemo.192.168.99.100.nip.io/customer/729404539",
+					"protocol": "http",
+					"host": [
+						"custdemo-apis-custdemo",
+						"192",
+						"168",
+						"99",
+						"100",
+						"nip",
+						"io"
+					],
+					"path": [
+						"customer",
+						"729404539"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"OpenShiftDemo\",\n\t\"address\" : \"Indiranagara, Bengaluru, INDIA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://custdemo-apis-custdemo.192.168.99.100.nip.io/customer/729404539",
+					"protocol": "http",
+					"host": [
+						"custdemo-apis-custdemo",
+						"192",
+						"168",
+						"99",
+						"100",
+						"nip",
+						"io"
+					],
+					"path": [
+						"customer",
+						"729404539"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://custdemo-apis-custdemo.192.168.99.100.nip.io/customer/729404539",
+					"protocol": "http",
+					"host": [
+						"custdemo-apis-custdemo",
+						"192",
+						"168",
+						"99",
+						"100",
+						"nip",
+						"io"
+					],
+					"path": [
+						"customer",
+						"729404539"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
